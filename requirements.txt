@@ -1,0 +1,7 @@
+requests>=2,<3
+msal>=0,<2
+python-decouple>=3.1.0
+Django==2.1.15
+djangorestframework==3.11.0
+pyodbc 
+django-pyodbc-azure==2.1.0.0

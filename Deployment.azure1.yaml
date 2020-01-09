@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shgp-backend-django
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: shgp-backend-django
+  template:
+    metadata:
+      labels:
+        app: shgp-backend-django
+    spec:
+      containers:
+      - name: shgp-backend-django
+        image: 
+        #imagePullPolicy: Always
+        ports:
+        - containerPort: 8000
