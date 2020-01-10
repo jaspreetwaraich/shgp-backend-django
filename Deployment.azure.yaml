@@ -14,10 +14,10 @@ spec:
     spec:
       containers:
       - name: shgp-backend-django
-        image: 
+        image: acrshgpdev1.azurecr.io/shgp:225
         #imagePullPolicy: Always
         ports:
-        - containerPort: 8000
+        - containerPort: 8002
 
 ---
 
@@ -29,6 +29,6 @@ spec:
   type: LoadBalancer
   ports:
   - port: 80
-    targetPort: 8000
+    targetPort: 8002
   selector:
     app: shgp-backend-django
