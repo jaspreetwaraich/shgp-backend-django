@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: shgp-backend-django-ingress
+spec:
+  rules:
+  - host: shgpdjango.io
+    http:
+      paths:
+        - backend:
+            serviceName: shgp-backend-django-
+            servicePort: 443

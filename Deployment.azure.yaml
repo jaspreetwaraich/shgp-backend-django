@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: shgp-backend-django
-        image: acrshgpdev1.azurecr.io/shgp:227
+        image: acrshgpdev1.azurecr.io/shgp:228
         #imagePullPolicy: Always
         ports:
         - containerPort: 8002
